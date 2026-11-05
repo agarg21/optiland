@@ -52,4 +52,4 @@ jobs:
       - name: Run tests with coverage
         run: |
           export QT_QPA_PLATFORM=offscreen
-          xvfb-run uv run pytest --durations=0 --cov --cov-report=xml
+          xvfb-run uv run pytest -n logical --durations=0 --cov --cov-report=xml
